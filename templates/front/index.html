@@ -14,6 +14,11 @@
 <!-- jquery  -->
 <script src="../../static/js/jquery/jquery-3.7.1.min.js"></script>
 <script src="../../static/js/jquery/jquery-ui.min.js"></script>
+
+<!-- swiper -->
+<link rel="stylesheet" href="../../static/js/swiper/swiper-bundle.css">
+<script src="../../static/js/swiper/swiper-bundle.js"></script>
+
 <script src="../../static/js/front/common.js"></script>
 
 <body>
@@ -173,8 +178,109 @@
                 </div>
                 <h4>카페매니저의 베스트 제품을 만나보세요.</h4>
             </div>
+            <div class="wraper">
+                <div class="swiper bestitems">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide best-item">
+                            <div class="product">
+                                <div class="img">
+                                    <img src="../../static/img/front/main/sec1-item01.png" alt="전광수커피">
+                                </div>
+                                <div class="text">
+                                    <span class="p-cate">원두</span>
+                                    <strong class="p-name">30초 블렌드</strong>
+                                    <span class="p-brand">전광수커피</span>
+                                    <a href="#" class="view-detail"><span> 자세히 보기</span> <i class="arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide best-item">
+                            <div class="product">
+                                <div class="img">
+                                    <img src="../../static/img/front/main/sec1-item01.png" alt="전광수커피">
+                                </div>
+                                <div class="text">
+                                    <span class="p-cate">원두</span>
+                                    <strong class="p-name">30초 블렌드</strong>
+                                    <span class="p-brand">전광수커피</span>
+                                    <a href="#" class="view-detail"><span> 자세히 보기</span> <i class="arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide best-item">
+                            <div class="product">
+                                <div class="img">
+                                    <img src="../../static/img/front/main/sec1-item01.png" alt="전광수커피">
+                                </div>
+                                <div class="text">
+                                    <span class="p-cate">원두</span>
+                                    <strong class="p-name">30초 블렌드</strong>
+                                    <span class="p-brand">전광수커피</span>
+                                    <a href="#" class="view-detail"><span> 자세히 보기</span> <i class="arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide best-item">
+                            <div class="product">
+                                <div class="img">
+                                    <img src="../../static/img/front/main/sec1-item01.png" alt="전광수커피">
+                                </div>
+                                <div class="text">
+                                    <span class="p-cate">원두</span>
+                                    <strong class="p-name">30초 블렌드</strong>
+                                    <span class="p-brand">전광수커피</span>
+                                    <a href="#" class="view-detail"><span> 자세히 보기</span> <i class="arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide best-item">
+                            <div class="product">
+                                <div class="img">
+                                    <img src="../../static/img/front/main/sec1-item01.png" alt="전광수커피">
+                                </div>
+                                <div class="text">
+                                    <span class="p-cate">원두</span>
+                                    <strong class="p-name">30초 블렌드</strong>
+                                    <span class="p-brand">전광수커피</span>
+                                    <a href="#" class="view-detail"><span> 자세히 보기</span> <i class="arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap">
+                        <div class="best_contr">
+                            <div class="swiper-pagination"></div>
+                            <div class="contr">
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
+    <script>
+        var swiper = new Swiper(".bestitems", {
+            spaceBetween: 30,
+            slidesPerView: 4.5,
+            centeredSlides: false,
+            slidesPerGroup: 1,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+    </script>
 </body>
 
 </html>
