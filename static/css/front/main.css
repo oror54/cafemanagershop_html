@@ -45,7 +45,7 @@
 .section02 .tit { display: flex; flex-direction: column; align-items: center; width: 100%; gap: 20px; } 
 .section02 .tit .tit_point { display: flex; flex-direction: column; align-items: center; gap: 5px; } 
 .section02 .tit .tit_point::before { content: ''; display: block; width: 150px; height: 20px; background: url(../../img/front/main/tit_point.svg) 50% 50% no-repeat; background-size: contain; } 
-.section02 .tit .tit_point span { color: #FF6E3A; font-family: 'Paperlogy'; font-size: 28px; font-weight: 600; line-height: 140% letter-spacing: -0.75px; } 
+.section02 .tit .tit_point span { color: #FF6E3A; font-family: 'Paperlogy'; font-size: 28px; font-weight: 600; line-height: 140% ;letter-spacing: -0.75px; } 
 .section02 .tit h4 { color: #000; font-family: "Pretendard"; font-size: 24px; font-weight: 400; letter-spacing: -1px; } 
 
 
