@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
@@ -7,8 +7,174 @@
     <title>카페매니저 입점상품몰 </title>
 </head>
 
-<body>
+<!-- css -->
+<link rel="stylesheet" href="../../static/css/common.css">
+<link rel="stylesheet" href="../../static/css/front/main.css">
 
+<!-- jquery  -->
+<script src="../../static/js/jquery/jquery-3.7.1.min.js"></script>
+<script src="../../static/js/jquery/jquery-ui.min.js"></script>
+<script src="../../static/js/front/common.js"></script>
+
+<body>
+    <header id="header">
+        <!-- PC header -->
+        <div class="header">
+            <div class="wrap">
+                <h1>
+                    <a href="#" class="logo">
+                        <div class="img"><img src="../../static/img/common/logo-character.svg" alt="cafemanager"></div>
+                        <span>cafe manager</span>
+                    </a>
+                </h1>
+                <nav class="gnb">
+                    <ul>
+                        <li class="depth1">
+                            <a href="#" class="depth_tit"><span class="depth_box">신선제품</span></a>
+                            <ul class="depth2">
+                                <li><a href="#">우유</a></li>
+                                <li><a href="#">과일</a></li>
+                                <li><a href="#">유제품</a></li>
+                                <li><a href="#">기타</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a href="#" class="depth_tit"><span class="depth_box">원두</span></a>
+                            <ul class="depth2">
+                                <li><a href="#">약배전</a></li>
+                                <li><a href="#">중배전</a></li>
+                                <li><a href="#">강배전</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a href="#" class="depth_tit"><span class="depth_box">디저트</span></a>
+                            <ul class="depth2">
+                                <li><a href="#">케익</a></li>
+                                <li><a href="#">생지</a></li>
+                                <li><a href="#">구움과자</a></li>
+                                <li><a href="#">기타</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a href="#" class="depth_tit"><span class="depth_box">식재료</span></a>
+                            <ul class="depth2">
+                                <li><a href="#">시럽</a></li>
+                                <li><a href="#">소스</a></li>
+                                <li><a href="#">파우더</a></li>
+                                <li><a href="#">기타</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a href="#" class="depth_tit"><span class="depth_box">부자재</span></a>
+                            <ul class="depth2">
+                                <li><a href="#">일회용품</a></li>
+                                <li><a href="#">식기</a></li>
+                                <li><a href="#">베이킹</a></li>
+                                <li><a href="#">기타</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- mobile header -->
+        <div class="mobile">
+            <div class="m-header">
+                <div class="wrap">
+                    <div class="inner">
+                        <h1>
+                            <a href="#" class="logo">
+                                <div class="img"><img src="../../static/img/common/logo-character.svg"
+                                        alt="cafemanager">
+                                </div>
+                                <span>cafe manager</span>
+                            </a>
+                        </h1>
+                        <div class="mBtn">
+                            <span class="bar1"></span>
+                            <span class="bar2"></span>
+                            <span class="bar3"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <aside class="lnb">
+                <div class="inn">
+                    <ul>
+                        <li class="depth1"><a href="#" class="depth_tit">신선제품</a>
+                            <div class="depth2">
+                                <ul class="inn">
+                                    <li><a href="#">우유</a></li>
+                                    <li><a href="#">과일</a></li>
+                                    <li><a href="#">유제품</a></li>
+                                    <li><a href="#">기타</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="depth1"><a href="#" class="depth_tit">원두</a>
+                            <div class="depth2">
+                                <ul class="inn">
+                                    <li><a href="#">약배전</a></li>
+                                    <li><a href="#">중배전</a></li>
+                                    <li><a href="#">강배전</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="depth1"><a href="#" class="depth_tit">디저트</a>
+                            <div class="depth2">
+                                <ul class="inn">
+                                    <li><a href="#">케익</a></li>
+                                    <li><a href="#">생지</a></li>
+                                    <li><a href="#">구움과자</a></li>
+                                    <li><a href="#">기타</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="depth1"><a href="#" class="depth_tit">식재료</a>
+                            <div class="depth2">
+                                <ul class="inn">
+                                    <li><a href="#">시럽</a></li>
+                                    <li><a href="#">소스</a></li>
+                                    <li><a href="#">파우더</a></li>
+                                    <li><a href="#">기타</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="depth1"><a href="#" class="depth_tit">부자재</a>
+                            <div class="depth2">
+                                <ul class="inn">
+                                    <li><a href="#">일회용품</a></li>
+                                    <li><a href="#">식기</a></li>
+                                    <li><a href="#">베이킹</a></li>
+                                    <li><a href="#">기타</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </header>
+    <div id="mainContents">
+        <section class="section01">
+            <div class="wrap">
+                <div class="title">
+                    <h3>카페매니저</h3>
+                    <p>우유 부터 원두, 식재료, 일회용품 등<br>
+                        다양한 카페 용품을 번거로움 없이<br>
+                        손쉽게 주문이 가능합니다.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section02">
+            <div class="tit">
+                <div class="tit_point">
+                    <span>BEST ITEM</span>
+                </div>
+                <h4>카페매니저의 베스트 제품을 만나보세요.</h4>
+            </div>
+        </section>
+    </div>
 </body>
 
 </html>

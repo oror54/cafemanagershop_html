@@ -1,43 +1,43 @@
 @charset "utf-8"; 
 /* 폰트 */
 /* Pretendard */
-@font-face { font-family: 'Pretendard'; font-weight: 900; font-display: swap; font-style: normal; src: local('Pretendard Black'), url('/font/Pretendard-Black.woff2') format('woff2') } 
-@font-face { font-family: 'Pretendard'; font-weight: 800; font-display: swap; font-style: normal; src: local('Pretendard ExtraBold'), url('/font/Pretendard-ExtraBold.woff2') format('woff2') } 
-@font-face { font-family: 'Pretendard'; font-weight: 700; font-display: swap; font-style: normal; src: local('Pretendard Bold'), url('/font/Pretendard-Bold.woff2') format('woff2'); } 
-@font-face { font-family: 'Pretendard'; font-weight: 600; font-display: swap; font-style: normal; src: local('Pretendard SemiBold'), url('/font/Pretendard-SemiBold.woff2') format('woff2'); } 
-@font-face { font-family: 'Pretendard'; font-weight: 500; font-display: swap; font-style: normal; src: local('Pretendard Medium'), url('/font/Pretendard-Medium.woff2') format('woff2'); } 
-@font-face { font-family: 'Pretendard'; font-weight: 400; font-display: swap; font-style: normal; src: local('Pretendard Regular'), url('/font/Pretendard-Regular.woff2') format('woff2'); } 
-@font-face { font-family: 'Pretendard'; font-weight: 300; font-display: swap; font-style: normal; src: local('Pretendard Light'), url('/font/Pretendard-Light.woff2') format('woff2'); } 
-@font-face { font-family: 'Pretendard'; font-weight: 200; font-display: swap; font-style: normal; src: local('Pretendard ExtraLight'), url('/font/Pretendard-ExtraLight.woff2') format('woff2'); } 
-@font-face { font-family: 'Pretendard'; font-weight: 100; font-display: swap; font-style: normal; src: local('Pretendard Thin'), url('/font/Pretendard-Thin.woff2') format('woff2'); }
+@font-face { font-family: 'Pretendard'; font-weight: 900; font-display: swap; font-style: normal; src: local('Pretendard Black'), url('../../static/font/Pretendard-Black.woff2') format('woff2') } 
+@font-face { font-family: 'Pretendard'; font-weight: 800; font-display: swap; font-style: normal; src: local('Pretendard ExtraBold'), url('../../static/font/Pretendard-ExtraBold.woff2') format('woff2') } 
+@font-face { font-family: 'Pretendard'; font-weight: 700; font-display: swap; font-style: normal; src: local('Pretendard Bold'), url('../../static/font/Pretendard-Bold.woff2') format('woff2'); } 
+@font-face { font-family: 'Pretendard'; font-weight: 600; font-display: swap; font-style: normal; src: local('Pretendard SemiBold'), url('../../static/font/Pretendard-SemiBold.woff2') format('woff2'); } 
+@font-face { font-family: 'Pretendard'; font-weight: 500; font-display: swap; font-style: normal; src: local('Pretendard Medium'), url('../../static/font/Pretendard-Medium.woff2') format('woff2'); } 
+@font-face { font-family: 'Pretendard'; font-weight: 400; font-display: swap; font-style: normal; src: local('Pretendard Regular'), url('../../static/font/Pretendard-Regular.woff2') format('woff2'); } 
+@font-face { font-family: 'Pretendard'; font-weight: 300; font-display: swap; font-style: normal; src: local('Pretendard Light'), url('../../static/font/Pretendard-Light.woff2') format('woff2'); } 
+@font-face { font-family: 'Pretendard'; font-weight: 200; font-display: swap; font-style: normal; src: local('Pretendard ExtraLight'), url('../../static/font/Pretendard-ExtraLight.woff2') format('woff2'); } 
+@font-face { font-family: 'Pretendard'; font-weight: 100; font-display: swap; font-style: normal; src: local('Pretendard Thin'), url('../../static/font/Pretendard-Thin.woff2') format('woff2'); }
 
 /* SUITE */
-@font-face {font-family: 'SUITE';font-weight: 300;src: url('/font/SUITE-Light.woff2') format('woff2'); } 
-@font-face {font-family: 'SUITE';font-weight: 400;src: url('/font/SUITE-Regular.woff2') format('woff2'); } 
-@font-face {font-family: 'SUITE';font-weight: 500;src: url('/font/SUITE-Medium.woff2') format('woff2'); } 
-@font-face {font-family: 'SUITE';font-weight: 600;src: url('/font/SUITE-SemiBold.woff2') format('woff2'); } 
-@font-face {font-family: 'SUITE';font-weight: 700;src: url('/font/SUITE-Bold.woff2') format('woff2'); } 
-@font-face {font-family: 'SUITE';font-weight: 800;src: url('/font/SUITE-ExtraBold.woff2') format('woff2'); } 
-@font-face {font-family: 'SUITE';font-weight: 900;src: url('/font/SUITE-Heavy.woff2') format('woff2'); } 
+@font-face {font-family: 'SUITE';font-weight: 300;src: url('../../static/font/SUITE-Light.woff2') format('woff2'); } 
+@font-face {font-family: 'SUITE';font-weight: 400;src: url('../../static/font/SUITE-Regular.woff2') format('woff2'); } 
+@font-face {font-family: 'SUITE';font-weight: 500;src: url('../../static/font/SUITE-Medium.woff2') format('woff2'); } 
+@font-face {font-family: 'SUITE';font-weight: 600;src: url('../../static/font/SUITE-SemiBold.woff2') format('woff2'); } 
+@font-face {font-family: 'SUITE';font-weight: 700;src: url('../../static/font/SUITE-Bold.woff2') format('woff2'); } 
+@font-face {font-family: 'SUITE';font-weight: 800;src: url('../../static/font/SUITE-ExtraBold.woff2') format('woff2'); } 
+@font-face {font-family: 'SUITE';font-weight: 900;src: url('../../static/font/SUITE-Heavy.woff2') format('woff2'); } 
 
 /* Paperloogy */
-@font-face {font-family: 'Paperlogy';font-weight: 100;src: url('/font/Paperlogy-1Thin.woff2') format('woff2'); } 
-@font-face {font-family: 'Paperlogy';font-weight: 200;src: url('/font/Paperlogy-2ExtraLight.woff2') format('woff2'); } 
-@font-face {font-family: 'Paperlogy';font-weight: 300;src: url('/font/Paperlogy-3Light.woff2') format('woff2'); } 
-@font-face {font-family: 'Paperlogy';font-weight: 400;src: url('/font/Paperlogy-4Regular.woff2') format('woff2'); } 
-@font-face {font-family: 'Paperlogy';font-weight: 500;src: url('/font/Paperlogy-5Medium.woff2') format('woff2'); } 
-@font-face {font-family: 'Paperlogy';font-weight: 600;src: url('/font/Paperlogy-6SemiBold.woff2') format('woff2'); } 
-@font-face {font-family: 'Paperlogy';font-weight: 700;src: url('/font/Paperlogy-7Bold.woff2') format('woff2'); } 
-@font-face {font-family: 'Paperlogy';font-weight: 800;src: url('/font/Paperlogy-8ExtraBold.woff2') format('woff2'); } 
-@font-face {font-family: 'Paperlogy';font-weight: 900;src: url('/font/Paperlogy-9Black.woff2') format('woff2'); } 
+@font-face {font-family: 'Paperlogy';font-weight: 100;src: url('../../static/font/Paperlogy-1Thin.woff2') format('woff2'); } 
+@font-face {font-family: 'Paperlogy';font-weight: 200;src: url('../../static/font/Paperlogy-2ExtraLight.woff2') format('woff2'); } 
+@font-face {font-family: 'Paperlogy';font-weight: 300;src: url('../../static/font/Paperlogy-3Light.woff2') format('woff2'); } 
+@font-face {font-family: 'Paperlogy';font-weight: 400;src: url('../../static/font/Paperlogy-4Regular.woff2') format('woff2'); } 
+@font-face {font-family: 'Paperlogy';font-weight: 500;src: url('../../static/font/Paperlogy-5Medium.woff2') format('woff2'); } 
+@font-face {font-family: 'Paperlogy';font-weight: 600;src: url('../../static/font/Paperlogy-6SemiBold.woff2') format('woff2'); } 
+@font-face {font-family: 'Paperlogy';font-weight: 700;src: url('../../static/font/Paperlogy-7Bold.woff2') format('woff2'); } 
+@font-face {font-family: 'Paperlogy';font-weight: 800;src: url('../../static/font/Paperlogy-8ExtraBold.woff2') format('woff2'); } 
+@font-face {font-family: 'Paperlogy';font-weight: 900;src: url('../../static/font/Paperlogy-9Black.woff2') format('woff2'); } 
 
 /* GmarketSans */
-@font-face {font-family: 'GmarketSans';font-weight: 300;src: url('/font/GmarketSansLight.woff2') format('woff2'); } 
-@font-face {font-family: 'GmarketSans';font-weight: 500;src: url('/font/GmarketSansMedium.woff2') format('woff2'); } 
-@font-face {font-family: 'GmarketSans';font-weight: 700;src: url('/font/GmarketSansBold.woff2') format('woff2'); } 
+@font-face {font-family: 'GmarketSans';font-weight: 300;src: url('../../static/font/GmarketSansLight.woff2') format('woff2'); } 
+@font-face {font-family: 'GmarketSans';font-weight: 500;src: url('../../static/font/GmarketSansMedium.woff2') format('woff2'); } 
+@font-face {font-family: 'GmarketSans';font-weight: 700;src: url('../../static/font/GmarketSansBold.woff2') format('woff2'); } 
 
 
-* { font-family:'Pretendard','Noto Sans KR', 'Malgun Gothic', 'dotum', '돋움', 'gulim', '굴림', 'Tahoma'; box-sizing:border-box; margin: 0; padding: 0; } 
+* { font-family:'Pretendard','Noto Sans KR', 'Malgun Gothic', 'dotum', '돋움', 'gulim', '굴림', 'Tahoma'; box-sizing:border-box; margin: 0; padding: 0; font-size: 0; } 
 fieldset { margin:0; padding:0; border:0 } 
 button { padding:0; border:0; background:none; cursor:pointer } 
 html,body { height:100% } 
@@ -60,7 +60,7 @@ i,em,address,cite { font-style:normal }
 hr { display:none } 
 
 *:hover,*:focus,*:checked { outline:none; -webkit-tap-highlight-color:transparent } 
-body { font-family: pretendard; } 
+body { font-family: pretendard; font-size: 0; } 
 :-ms-input-placeholder { color:#888 } 
 ::-ms-input-placeholder { color:#888 } 
 ::-webkit-scrollbar { width: 5px; } 
