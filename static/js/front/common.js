@@ -44,3 +44,10 @@ $(function () {
         }
     });
 })
+
+
+$(function() {
+    $('.toggle_on').on('click', function(e) {
+        $(this).toggleClass('on');
+    });
+})

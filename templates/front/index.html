@@ -248,11 +248,15 @@
                         </div>
                     </div>
                     <div class="wrap">
-                        <div class="best_contr">
+                        <div class="best-contr">
                             <div class="swiper-pagination"></div>
                             <div class="contr">
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
+                                <button type="button" class="left best-prev"></button>
+                                <button type="button" class="start best-play toggle_on">
+                                    <i class="pause"></i>
+                                    <i class="start"></i>
+                                </button>
+                                <button type="button" class="right best-next"></button>
                             </div>
                         </div>
                     </div>
@@ -261,22 +265,36 @@
         </section>
     </div>
     <script>
-        var swiper = new Swiper(".bestitems", {
+        var bestProduct = new Swiper(".bestitems", {
             spaceBetween: 30,
-            slidesPerView: 4.5,
+            slidesPerView: 1.5,
             centeredSlides: false,
             slidesPerGroup: 1,
+            speed:1000,
+            loop: true,
+            autoplay:true,
             autoplay: {
-                delay: 2500,
+                delay: 5000,
                 disableOnInteraction: false,
             },
+            on: {
+            init: function() {
+                $('.best-contr .best-play').on('click', function(e) {
+                    if($(this).hasClass('on')){
+                        bestProduct.autoplay.stop();
+                    } else {
+                        bestProduct.autoplay.start();
+                    }
+                })
+            }
+        },
             pagination: {
                 el: ".swiper-pagination",
-                clickable: true,
+                type:"progressbar",
             },
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                nextEl: ".best-next",
+                prevEl: ".best-prev",
             },
         });
 
