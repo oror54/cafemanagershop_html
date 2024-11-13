@@ -360,11 +360,94 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
-    </div>
-    </div>
-    </section>
-    </main>
+                <div class="swiper-pagination new-pagination"></div>
+            </section>
+            <section class="section05">
+                <div class="wrap maxw1400">
+                    <div class="thumb-box">
+                        <div class="thumb-img video">
+                            <img src="../../static/img/front/main/cafemanager-video-thumb.jpg"
+                                alt="카페 사장님을 위한 카페매니저 서비스">
+                            <button class="play-btn"></button>
+                        </div>
+                        <div class="thumb-txt">
+                            <div class="thb-tit">
+                                <p>카페사장님을 위한 일 잘하는 매니저</p>
+                                <h3>CAFE MANAGER</h3>
+                            </div>
+                            <div class="thb-txt">
+                                <p>입점 및 문의사항은 카카오톡 채팅
+                                    및 고객센터로 문의해주세요.</p>
+                            </div>
+                            <button class="btn kakao-btn">
+                                <p>카카오톡 문의하기</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section06">
+                <div class="tit">
+                    <div class="tit_point">
+                        <span>FOLLOW US</span>
+                    </div>
+                    <h4>카페매니저의 소식을 확인해 보세요.</h4>
+                    <div class="view">
+                        <a href="#" class="view-detail"><span>SNS 보기</span> <i class="arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="wraper">
+                    <div class="swiper instaitems">
+                        <div class="swiper-wrapper row">
+                            <div class="swiper-slide insta-item">
+                                <a href="#" class="inner hov">
+                                    <div class="insta-img">
+                                        <img src="../../static/img/front/main/insta01.png" alt="카페매니저 인스타그램">
+                                    </div>
+                                    <div class="insta-hov">
+                                        <i class="icon-insta"></i>
+                                        <span class="insta-sub">@cafemanager_official</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide insta-item">
+                                <a href="#" class="inner hov">
+                                    <div class="insta-img">
+                                        <img src="../../static/img/front/main/insta02.jpg" alt="카페매니저 인스타그램">
+                                    </div>
+                                    <div class="insta-hov">
+                                        <i class="icon-insta"></i>
+                                        <span class="insta-sub">@cafemanager_official</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide insta-item">
+                                <a href="#" class="inner hov">
+                                    <div class="insta-img">
+                                        <img src="../../static/img/front/main/insta03.jpg" alt="카페매니저 인스타그램">
+                                    </div>
+                                    <div class="insta-hov">
+                                        <i class="icon-insta"></i>
+                                        <span class="insta-sub">@cafemanager_official</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide insta-item">
+                                <a href="#" class="inner hov">
+                                    <div class="insta-img">
+                                        <img src="../../static/img/front/main/insta04.jpg" alt="카페매니저 인스타그램">
+                                    </div>
+                                    <div class="insta-hov">
+                                        <i class="icon-insta"></i>
+                                        <span class="insta-sub">@cafemanager_official</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
     <script>
         var bestProduct = new Swiper(".bestitems", {
@@ -457,6 +540,65 @@
                 }
             }
         });
+
+        var snsSocial = '';
+        var innerWid;
+        var socialFlag = false;
+        $(window).on('resize', function () {
+            initSocialSwiper();
+        })
+        initSocialSwiper();
+
+        function initSocialSwiper() {
+            innerWid = window.innerWidth;
+            if (innerWid <= 1280) {
+                socialFlag = true;
+            } else {
+                socialFlag = false;
+            }
+            if (!socialFlag && snsSocial == '') {
+                createSocialSwiper();
+            } else if (socialFlag && snsSocial != '') {
+                snsSocial.destroy();
+                snsSocial = '';
+            }
+        }
+
+
+        function createSocialSwiper() {
+            snsSocial = new Swiper('.instaitems', {
+                observer: true,
+                observeParents: true,
+                slidesPerView: 4,
+                speed: 500,
+                loop: true,
+                autoplay: true,
+                autoplay: {
+                    delay: 3500,
+                    disableOnInteraction: false,
+                },
+                navigation: {
+                    nextEl: ".social_next",
+                    prevEl: ".social_prev",
+                },
+            })
+        }
+
+
+        var stack = 4;
+        var total;
+        function mainMoreSocial() {
+            var bnr = $('.instaitems .insta-item');
+            total = $('.instaitems .insta-item').length;
+            for (i = stack; i < stack + 4; i++) {
+                console.log(i);
+                bnr.eq(i).show();
+            }
+            stack += 4;
+            if (stack >= total) {
+                $(event.currentTarget).hide();
+            }
+        }
     </script>
 </body>
 
