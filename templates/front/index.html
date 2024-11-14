@@ -443,12 +443,30 @@
                                     </div>
                                 </a>
                             </div>
+                            <div class="swiper-slide insta-item">
+                                <a href="#" class="inner hov">
+                                    <div class="insta-img">
+                                        <img src="../../static/img/front/main/insta04.jpg" alt="카페매니저 인스타그램">
+                                    </div>
+                                    <div class="insta-hov">
+                                        <i class="icon-insta"></i>
+                                        <span class="insta-sub">@cafemanager_official</span>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
+                    </div>
+                    <div class="insta-controls">
+                        <button type="button" class="control insta-prev left">
+                        </button>
+                        <button type="button" class="control insta-next right">
+                        </button>
                     </div>
                 </div>
             </section>
         </main>
     </div>
+    <footer id="footer"></footer>
     <script>
         var bestProduct = new Swiper(".bestitems", {
             spaceBetween: 30,
@@ -578,23 +596,23 @@
                     disableOnInteraction: false,
                 },
                 navigation: {
-                    nextEl: ".social_next",
-                    prevEl: ".social_prev",
+                    nextEl: ".insta-next",
+                    prevEl: ".insta-prev",
                 },
             })
         }
 
 
-        var stack = 4;
+        var stack = 3;
         var total;
         function mainMoreSocial() {
             var bnr = $('.instaitems .insta-item');
             total = $('.instaitems .insta-item').length;
-            for (i = stack; i < stack + 4; i++) {
+            for (i = stack; i < stack + 3; i++) {
                 console.log(i);
                 bnr.eq(i).show();
             }
-            stack += 4;
+            stack += 3;
             if (stack >= total) {
                 $(event.currentTarget).hide();
             }
