@@ -185,17 +185,6 @@ main .tit h4 { color: #000; font-family: "Pretendard"; font-size: 24px; font-wei
 
 
 /* footer */
-.footer { background-color: #302f2e; padding: 100px 0; } 
-.footer .inner { position: relative; } 
-.footer .inner .ft-logo { display: flex; align-items: flex-end; } 
-.footer .inner .ft-logo .img { width: 120px; } 
-.footer .inner .ft-logo .img img { width: 100%; object-fit: contain; } 
-.footer .inner .ft-cutomer { position: absolute; bottom: 0; right: 0; } 
-.footer .inner .ft-cutomer .tell-box { display:flex; flex-direction: column; align-items: flex-end; gap: 10px; } 
-.footer .inner .ft-cutomer .tell-box .tit p { color: #FFF; font-family: Paperlogy; font-size: 16px; font-weight: 600;  letter-spacing: -0.75px; } 
-.footer .inner .ft-cutomer .tell-box .num strong { overflow: hidden;color: #F15A24;font-family: Paperlogy;font-size: 30px;font-weight: 900; } 
-
-
 
 
 /* 반응형 */
@@ -265,6 +254,9 @@ main .tit h4 { color: #000; font-family: "Pretendard"; font-size: 24px; font-wei
 
  .section06 .instaitems .row { min-width: 100%; flex-wrap: wrap; } 
  .section06 .instaitems .row .insta-item { width: 33.3%; flex: 0 1 auto; } 
+
+ .footer .inner .ft-cutomer {position: static;}
+ .footer .inner .ft-cutomer .tell-box {align-items: flex-start;}
  }
 
 
